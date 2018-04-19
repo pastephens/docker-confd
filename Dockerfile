@@ -1,6 +1,6 @@
 FROM golang:alpine AS builder
 
-ARG CONFD_VERSION=v0.15.0
+ARG CONFD_VERSION=master
 ARG CONFD_PKG=github.com/kelseyhightower/confd
 ARG CONFD_REPO=https://$CONFD_PKG.git
 ARG CONFD_SRC=$GOPATH/src/$CONFD_PKG
